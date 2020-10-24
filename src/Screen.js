@@ -6,7 +6,7 @@ export default class Screen extends React.Component {
       <div
         style={{
           height: size,
-          background: "rgb(133,134,148)",
+          background: "rgb(34, 34, 34)",
           overflowX: "auto",
           overflowY: "hidden"
         }}
@@ -16,7 +16,7 @@ export default class Screen extends React.Component {
           style={{
             color: "white",
             fontSize: "70px",
-            transform: "translateY(25%)"
+            transform: "translateY(70px)"
           }}
         >
           {this.props.value}

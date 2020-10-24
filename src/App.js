@@ -147,7 +147,7 @@ export default class App extends React.Component {
       <ValueContext.Provider value={this.state.handleDisplay}>
         <div className="App" style={{ maxWidth: 800 }}>
           <div
-            style={{ background: "rgb(133,134,148)" }}
+            style={{ background: "rgb(34, 34, 34)" }}
             className="screen-border"
           >
             <Screen value={this.state.display} />
