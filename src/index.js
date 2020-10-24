@@ -18,4 +18,4 @@ window.onresize = () => {
     rootElement
   );
 };
-window.document.title = "IOS Calulator";
+window.document.title = "Calulator";
