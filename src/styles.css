@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  appearance: none;
+  -webkit-appearance: none;
+  height: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  appearance: none;
+  -webkit-appearance: none;
+  background: rgb(213, 213, 213);
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+
+  appearance: none;
+  -webkit-appearance: none;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #333333;
+}
+button:hover {
+  box-shadow: inset 0px 0px 20px -5px rgba(0, 0, 0, 0.3);
+}
+button:active {
+  box-shadow: inset 0px 0px 20px -5px rgba(0, 0, 0, 0.3);
+}
+html {
+  background: #222222;
+  width: 100vw;
+  height: 95vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  font-weight: 500;
+}
+body {
+  height: 100%;
+  margin: auto;
+  min-width: 370px;
+  width: 100%;
+  max-width: 800px;
+  min-height: 500px;
+  max-height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#root {
+  box-shadow: 0 10px 30px 10px rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 80%;
+}
+.App {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  text-align: center;
+  margin: auto;
+}
+.screen-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: auto;
+}
+button {
+  border: rgb(133, 134, 148) solid 1px;
+  font-size: 50px;
+  background: rgb(224, 224, 224);
+  font-weight: 500;
+}
+.row {
+  border-collapse: collapse;
+}
+button[value="x"],
+button[value="÷"],
+button[value="="],
+button[value="-"],
+button[value="+"] {
+  background: #f5923e;
+}
+button[value="AC"] {
+  background: rgb(155, 0, 0);
+  color: white;
+}
+.screen-border {
+  height: 20%;
+  min-height: 100px;
+}
+.table-bar {
+  height: 100%;
+}
+.button-wrapper {
+  height: 80%;
+}
+[value="Open Sandbox"] {
+  display: none !important;
+}
