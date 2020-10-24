@@ -2,16 +2,21 @@
     "short_name": "React App",
     "name": "Create React App",
     "icons": [
-      {
+        {
+        "src": "../img/calc256.png",
+        "type": "image/png",
+        "sizes": "256x256"
+        },
+        {
         "src": "../img/logo256.png",
         "type": "image/png",
         "sizes": "256x256"
-      },
-      {
+        },
+        {
         "src": "../img/logo512.png",
         "type": "image/png",
         "sizes": "512x512"
-      }
+        }
     ],
     "start_url": ".",
     "display": "standalone",
