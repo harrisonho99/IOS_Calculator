@@ -18,4 +18,33 @@ window.onresize = () => {
     rootElement
   );
 };
-window.document.title = "Calulator";
+document.addEventListener("orientationchange", ()=>{
+  ReactDOM.render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>,
+    rootElement
+  );
+});
+var mql = window.matchMedia("(orientation: portrait)");
+
+// If there are matches, we're in portrait
+if(mql.matches) {  
+  // Portrait orientation
+  ReactDOM.render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>,
+    rootElement
+  );
+  
+} else {  
+  ReactDOM.render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>,
+    rootElement
+  );
+	// Landscape orientation
+}
+
