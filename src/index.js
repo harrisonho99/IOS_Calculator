@@ -26,18 +26,40 @@ document.addEventListener("orientationchange", ()=>{
     rootElement
   );
 });
-function oriented(){
-setInterval(()=>{
-  var mql = window.matchMedia("(orientation: portrait)");
-  if(mql.matches) {  
+// function oriented(){
+// setInterval(()=>{
+//   var mql = window.matchMedia("(orientation: portrait)");
+//   if(mql.matches) {  
+//     ReactDOM.render(
+//       <React.StrictMode>
+//         <App />
+//       </React.StrictMode>,
+//       rootElement
+//     );
+    
+//   } else {  
+//     ReactDOM.render(
+//       <React.StrictMode>
+//         <App />
+//       </React.StrictMode>,
+//       rootElement
+//     );
+//   }
+// },0)
+// }
+// oriented()
+
+var mediaQueryList = window.matchMedia('(max-width: 679px)');
+
+function screenTest(e) {
+  if (e.matches) {
     ReactDOM.render(
       <React.StrictMode>
         <App />
       </React.StrictMode>,
       rootElement
     );
-    
-  } else {  
+  } else {
     ReactDOM.render(
       <React.StrictMode>
         <App />
@@ -45,6 +67,5 @@ setInterval(()=>{
       rootElement
     );
   }
-},0)
 }
-oriented()
+mediaQueryList.addListener(screenTest)
