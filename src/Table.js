@@ -12,8 +12,8 @@ export default class Table extends React.Component {
     }
     if (window.innerWidth < 680) {
       btnWidth = {
-        nomalSize: "120px  120px 120px auto",
-        specialSize: "240px 120px auto"
+        nomalSize: "100px  100px 100px auto",
+        specialSize: "200px 100px auto"
       };
     }
 
