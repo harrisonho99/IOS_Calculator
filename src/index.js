@@ -26,25 +26,25 @@ document.addEventListener("orientationchange", ()=>{
     rootElement
   );
 });
-var mql = window.matchMedia("(orientation: portrait)");
-
-// If there are matches, we're in portrait
-if(mql.matches) {  
-  // Portrait orientation
-  ReactDOM.render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>,
-    rootElement
-  );
-  
-} else {  
-  ReactDOM.render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>,
-    rootElement
-  );
-	// Landscape orientation
+function oriented(){
+setInterval(()=>{
+  var mql = window.matchMedia("(orientation: portrait)");
+  if(mql.matches) {  
+    ReactDOM.render(
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>,
+      rootElement
+    );
+    
+  } else {  
+    ReactDOM.render(
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>,
+      rootElement
+    );
+  }
+},0)
 }
-
+oriented()
