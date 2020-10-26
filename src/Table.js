@@ -4,16 +4,16 @@ let heightBtn = "20%";
 var btnWidth;
 export default class Table extends React.Component {
   render() {
-    if (window.innerWidth >= 700) {
+    if (window.innerWidth >= 680) {
       btnWidth = {
         nomalSize: "200px  200px 200px auto",
         specialSize: "400px  200px auto"
       };
     }
-    if (window.innerWidth < 700) {
+    if (window.innerWidth < 680) {
       btnWidth = {
-        nomalSize: "100px  100px 100px auto",
-        specialSize: "200px 100px auto"
+        nomalSize: "120px  120px 120px auto",
+        specialSize: "240px 120px auto"
       };
     }
 
